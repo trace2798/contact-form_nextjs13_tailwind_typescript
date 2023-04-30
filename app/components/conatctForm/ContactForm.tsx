@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 
 export const ContactForm: React.FC = () => {
@@ -16,6 +17,7 @@ export const ContactForm: React.FC = () => {
                 </p>
               </div>
             </div>
+            {/* Formspree end point goes here */}
             <form action="https://formspree.io/f/xjvdlkjv" method="POST">
               <div className="mt-4 space-y-6">
                 <div>
@@ -93,12 +95,11 @@ export const ContactForm: React.FC = () => {
         </div>
         <div className="hidden bg-white lg:block lg:flex-1 lg:relative sm:contents">
           <div className="absolute inset-0 object-cover w-full h-full bg-white">
-            <img
+            <Image
               className="object-center w-full h-auto bg-gray-200"
-              src="https://d33wubrfki0l68.cloudfront.net/64c901dbc4b16388ef27646a320ad9c1441594df/236fd/images/placeholders/rectangle2.svg"
+              src="/images/undraw_contact.png"
               alt=""
-              width="1310"
-              height="873"
+             fill
             />
           </div>
         </div>
