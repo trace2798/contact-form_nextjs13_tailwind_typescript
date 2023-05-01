@@ -6,6 +6,9 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-   <ContactForm/>
+    <main className="absolute inset-0 flex justify-center items-center">
+
+      <ContactForm/>
+    </main>
   )
 }
